@@ -1,0 +1,57 @@
+/*:root {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}*/
+
+/*Styles of all pages*/
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: #fbf7ed;
+}
+
+.home-image {
+    padding: 0;
+}
+
+.navigation {
+    margin: 1.5em 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/*Styles of the home page*/
+.creative-developer > h3 {
+    line-height: 2;
+}
+
+.about-me > p {
+    line-height: 2;
+}
+
+.education {
+    background-color: rgba(197,239,255, 0.5);
+}
+
+.employment {
+    background-color: rgba(225,255,185, 0.5);
+}
+
+/*Styles of the Skills page*/
+
+
+/*Styles of the Experience page*/
+/*Styles of the References page*/
+/*Styles of the Contact Me page*/
