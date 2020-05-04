@@ -50,8 +50,22 @@ body {
 }
 
 /*Styles of the Skills page*/
+.card-header .btn-link {
+    color: black;
+}
 
+.card-header {
+    background-color: rgba(197,239,255, 0.5);
+}
 
+.card-body {
+    background-color: rgba(225,255,185, 0.5);
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.accordion {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
 /*Styles of the Experience page*/
 /*Styles of the References page*/
 /*Styles of the Contact Me page*/
