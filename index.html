@@ -5,6 +5,9 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!--Custom CSS-->
@@ -21,23 +24,24 @@
     <div class="row navigation">
       <div class="col-md-12">
         <nav class="nav nav-tabs justify-content-center">
-          <a class="nav-link active" href="index.html">Start Here</a>
-          <a class="nav-link" href="skills.html">Skills</a>
-          <a class="nav-link" href="experience.html">Experience</a>
-          <a class="nav-link" href="contact.html">Contact Me</a>
+          <a class="nav-link active" href="index.html">START HERE</a>
+          <a class="nav-link" href="#skills">SKILLS</a>
+          <a class="nav-link" href="#employment">EXPERIENCE</a>
+          <a class="nav-link" href="#education">EDUCATION</a>
+          <a class="nav-link" href="#contact">CONTACT ME</a>
         </nav>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row" id="inteoduction">
       <div class="col-md-1"></div>
       <div class="col-md-3 creative-developer">
         <h3>
-          I<br/>
-          &nbsp;&nbsp;AM<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CREATIVE<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEB<br/>
+          I<br />
+          &nbsp;&nbsp;AM<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CREATIVE<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEB<br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEVELOPER
         </h3>
       </div>
@@ -45,35 +49,341 @@
       <div class="col-md-4 about-me">
         <h3>About me</h3>
         <p>
-          Emergent web developer and user interface tester with 4 years of IT experience including, holding knowledge of operating systems, web development (HTML, CSS, JavaScript, Bootstrap, SASS, jQuery, and WordPress), databases, data warehousing, and SAP Data Services (BODS). Eager to meet challenges and quickly assimilate newest and latest technologies, skills, concepts, and ideas.
+          Emergent web developer and user interface tester with 4 years of IT experience including, holding knowledge of
+          operating systems, web development (HTML, CSS, JavaScript, Bootstrap, SASS, jQuery, and WordPress), databases,
+          data warehousing, and SAP Data Services (BODS). Eager to meet challenges and quickly assimilate newest and
+          latest technologies, skills, concepts, and ideas.
         </p>
       </div>
       <div class="col-md-1"></div>
     </div>
 
-    <div class="row text-center education">
-      <div class="col-12 education">
-        <h4>Education</h4>
-        <p>
-          Post-degree Diploma in Global Business Management<br/> 
-          North Island College, Campbell River, BC, Canada<br/><br/>
-          Bachelor of Technology<br>
-          West Bengal University of Technology, India
-        </p>
+    <div class="row" id="skills">
+      <div class="col-12">
+        <div class="accordion" id="accordionSkills">
+          <div class="card">
+            <div class="card-header" id="heading-skills-IT">
+              <h3 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-skills-IT"
+                  aria-expanded="true" aria-controls="collapse-skills-IT">
+                  <span class="fas fa-chevron-down faDownOne"></span>
+                  IT Skills
+                </button>
+              </h3>
+            </div>
+            <div id="collapse-skills-IT" class="collapse collapseOuter show" aria-labelledby="heading-skills-IT"
+              data-parent="#accordionSkills">
+              <div class="card-body">
+                <div class="accordion" id="accordionSpecificSkills">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h4 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="false" aria-controls="collapseOne">
+                          <span class="fas fa-chevron-down faDownTwo"></span>
+                          Primary Skills
+                        </button>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="collapse collapseInner" aria-labelledby="headingOne"
+                      data-parent="#accordionSpecificSkills">
+                      <div class="card-body">
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JavaScript</li>
+                          <li>Bootstrap 4</li>
+                          <li>SASS</li>
+                          <li>jQuery</li>
+                          <li>WordPress</li>
+                          <li>Responsive websites</li>
+                          <li>SQL (Structured Query Language)</li>
+                          <li>SAP BODS 4.2 (Business Object Data Services)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h4 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                          aria-expanded="false" aria-controls="collapseTwo">
+                          <span class="fas fa-chevron-down faDownTwo"></span>
+                          Databases
+                        </button>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="collapse collapseInner" aria-labelledby="headingTwo"
+                      data-parent="#accordionSpecificSkills">
+                      <div class="card-body">
+                        <ul>
+                          <li>Microsoft SQL Server</li>
+                          <li>Teradata</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h4 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"
+                          aria-expanded="false" aria-controls="collapseThree">
+                          <span class="fas fa-chevron-down faDownTwo"></span>
+                          Version control systems
+                        </button>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="collapse collapseInner" aria-labelledby="headingThree"
+                      data-parent="#accordionSpecificSkills">
+                      <div class="card-body">
+                        <ul>
+                          <li>SVN</li>
+                          <li>Git</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h4 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
+                          aria-expanded="false" aria-controls="collapseFour">
+                          <span class="fas fa-chevron-down faDownTwo"></span>
+                          Certification
+                        </button>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="collapse collapseInner" aria-labelledby="headingFour"
+                      data-parent="#accordionSpecificSkills">
+                      <div class="card-body">
+                        <ul>
+                          <li>ISTQB (International Software Testing Qualifications Board) – Foundation Level</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFive">
+                      <h4 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"
+                          aria-expanded="false" aria-controls="collapseFive">
+                          <span class="fas fa-chevron-down faDownTwo"></span>
+                          QA experience
+                        </button>
+                      </h4>
+                    </div>
+                    <div id="collapseFive" class="collapse collapseInner" aria-labelledby="headingFive"
+                      data-parent="#accordionSpecificSkills">
+                      <div class="card-body">
+                        <ul>
+                          <li>User Interface testing including unit testing, integration testing, and system testing
+                          </li>
+                          <li>Smoke testing</li>
+                          <li>Exploratory testing</li>
+                          <li>ETL (extraction, transformation, and load) / data warehousing testing</li>
+                          <li>Software quality management tool: HP Quality Center</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSix">
+                      <h4 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix"
+                          aria-expanded="false" aria-controls="collapseSix">
+                          <span class="fas fa-chevron-down faDownTwo"></span>
+                          Generic knowledge in IT industry
+                        </button>
+                      </h4>
+                    </div>
+                    <div id="collapseSix" class="collapse collapseInner" aria-labelledby="headingSix"
+                      data-parent="#accordionSpecificSkills">
+                      <div class="card-body">
+                        <ul>
+                          <li>SDLC (Software Development Life Cycle)</li>
+                          <li>STLC (Software Testing Life Cycle)</li>
+                          <li>Business requirement gathering in all phases</li>
+                          <li>Agile software development</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading-transferable-skills">
+              <h3 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse"
+                  data-target="#collapse-skills-transferable" aria-expanded="false"
+                  aria-controls="collapse-skills-transferable">
+                  <span class="fas fa-chevron-down faDownOne"></span>
+                  Transferable Skills
+                </button>
+              </h3>
+            </div>
+            <div id="collapse-skills-transferable" class="collapse collapseOuter"
+              aria-labelledby="heading-transferable-skills" data-parent="#accordionSkills">
+              <div class="card-body">
+                <ul>
+                  <li>Advanced working knowledge on Microsoft Office (Office 365) applications, including Word, Excel,
+                    PowerPoint, Access, and Outlook</li>
+                  <li>Ability to quickly adapt to new technologies and projects</li>
+                  <li>Ability to work with others and individually, and to reach solutions creatively</li>
+                  <li>Experienced in team management and mentorship</li>
+                  <li>Ability to tackle challenges</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  
-    <div class="row text-center employment">
+
+    <div class="row" id="employment">
+      <img src="images/workWomen.jpg" alt="" class="col-md-6 col-sm-12 responsive">
+      <div class="col-md-6 col-sm-12">
+        <div id="carouselEmployment" class="carousel slide" data-ride="carousel">
+          <!-- <ol class="carousel-indicators">
+            <li data-target="#carouselEmployment" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselEmployment" data-slide-to="1"></li>
+            <li data-target="#carouselEmployment" data-slide-to="2"></li>
+          </ol> -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h3>IT Experience</h3>
+              <table class="table table-dark table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Job Title</th>
+                    <th>Employer</th>
+                    <th>Duration</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>IT Developer</td>
+                    <td><a href="https://www.ilscorp.com/" target="_new">ILS Learning Corporation</a>, Comox, BC, Canada
+                    </td>
+                    <td>May 2019–Present</td>
+                  </tr>
+                  <tr>
+                    <td>Systems Engineer</td>
+                    <td><a href="https://www.tcs.com/" target="_new">Tata Consultancy Services</a>, Kolkata, India</td>
+                    <td>April 2018–August 2018</td>
+                  </tr>
+                  <tr>
+                    <td>Associate Consultant</td>
+                    <td><a href="https://www.capgemini.com/in-en/" target="_new">Capgemini Technology Services India
+                        Ltd</a>, Bangalore, India</td>
+                    <td>December 2014–March 2018</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="carousel-item">
+              <h3>Non-IT Experience</h3>
+              <table class="table table-dark table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Job Title</th>
+                    <th>Employer</th>
+                    <th>Duration</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Peer Tutor</td>
+                    <td><a href="https://www.nic.bc.ca/">North Island College</a>, Comox Valley, BC, Canada</td>
+                    <td>October 2019–April 2020</td>
+                  </tr>
+                  <tr>
+                    <td>Student Assistant</td>
+                    <td><a href="https://www.nic.bc.ca/">North Island College library</a>, Campbell River, BC, Canada
+                    </td>
+                    <td>October 2018–April 2019</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="carousel-item">
+              <h3>Volunteer Experience</h3>
+              <table class="table table-dark table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Job Title</th>
+                    <th>Employer</th>
+                    <th>Duration</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Frontend Developer</td>
+                    <td>Community website – <a href="https://cvhelps.ca/">Comox Valley Helps</a>, Comox Valley, BC</td>
+                    <td>March 2020–Present</td>
+                  </tr>
+                  <tr>
+                    <td>Student Leader</td>
+                    <td>Student Leadership Team, <a href="https://www.nic.bc.ca/">North Island College</a>, Campbell
+                      River, BC</td>
+                    <td>September 2018–April 2019</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselEmployment" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselEmployment" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="education">
+      <div class="col-md-6 col-sm-6">
+        <h3>Education</h3>
+        <table class="table table-dark table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Degree/Diploma</th>
+              <th>Institution</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Post-degree Diploma in Global Business Management</td>
+              <td>North Island College, Campbell River, BC, Canada</td>
+              <td>September 2018–April 2020</td>
+            </tr>
+            <tr>
+              <td>Bachelor of Technology</td>
+              <td>West Bengal University of Technology, Kolkata, India</td>
+              <td>September 2009–August 2013</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <img src="images/education.jpg" alt="" class="col-md-6 col-sm-12 responsive">
+    </div>
+
+    <div class="row" id="contact">
       <div class="col-12">
-        <h4>Employment</h4>
-        <p>
-          IT Developer<br/>
-          ILS Learning Corporation, Comox, BC, Canada<br/><br/>
-          Systems Engineer<br/>
-          Tata Consultancy Services, India<br/><br/>
-          Associate Consultant<br/>
-          Capgemini Technology Services India Ltd, India
-        </p>
+        <h4 class="text-center">Get in touch with me</h4>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <p>Part1</p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p>part2</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -87,6 +397,23 @@
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    $(document).ready(function () {
+      // Downward/upward icon of the outer accordion
+      $('.collapseOuter').on('shown.bs.collapse', function () {
+        $(this).parent().find('.faDownOne').removeClass('faDownOne fa-chevron-down').addClass('faDownOne fa-chevron-up');
+      }).on('hidden.bs.collapse', function () {
+        $(this).parent().find('.faDownOne').removeClass('faDownOne fa-chevron-up').addClass('faDownOne fa-chevron-down');
+      });
+      // Downward/upward icon of the inner accordion
+      $('.collapseInner').on('.collapseInner shown.bs.collapse', function () {
+        $(this).parent().find('.faDownTwo').removeClass('faDownTwo fa-chevron-down').addClass('faDownTwo fa-chevron-up');
+      }).on('hidden.bs.collapse', function () {
+        $(this).parent().find('.faDownTwo').removeClass('faDownTwo fa-chevron-up').addClass('faDownTwo fa-chevron-down');
+      });
+    });
+  </script>
 </body>
 
 </html>

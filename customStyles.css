@@ -13,7 +13,6 @@ body * + * {
     margin-top: 1.5em;
 }*/
 
-/*Styles of all pages*/
 body {
     margin: 0;
 }
@@ -32,7 +31,6 @@ body {
     border-bottom: 1px solid black;
 }
 
-/*Styles of the home page*/
 .creative-developer > h3 {
     line-height: 2;
 }
@@ -41,31 +39,60 @@ body {
     line-height: 2;
 }
 
-.education {
-    background-color: rgba(197,239,255, 0.5);
+#inteoduction {
+    padding-bottom: 2em;;
 }
 
-.employment {
-    background-color: rgba(225,255,185, 0.5);
+#skills {
+    background-color: rgb(197,239,255);
+    padding: 1em 0;;
 }
 
-/*Styles of the Skills page*/
 .card-header .btn-link {
     color: black;
 }
 
 .card-header {
-    background-color: rgba(197,239,255, 0.5);
+    background-color: rgba(252,109,153, 0.3);
 }
 
 .card-body {
-    background-color: rgba(225,255,185, 0.5);
+    background-color: #fbf7ed;
     border: 1px solid rgba(0,0,0,.125);
+}
+
+#accordionSpecificSkills .card-body {
+    background-color: rgba(8,103,11, 0.2);
 }
 
 .accordion {
     border-bottom: 1px solid rgba(0,0,0,.125);
 }
-/*Styles of the Experience page*/
-/*Styles of the References page*/
-/*Styles of the Contact Me page*/
+
+#employment > img,
+#education > img {
+    padding: 0;
+}
+
+#employment > div {
+    padding: 0;
+}
+
+#employment > div {
+    background-color: rgba(252,109,153, 0.3);
+}
+
+#employment .carousel-item {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+
+#education > div {
+    background-color: rgba(8,103,11, 0.2);
+    padding-top: 1em;
+}
+
+#contact {
+    padding: 1em 0;
+}
