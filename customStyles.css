@@ -31,7 +31,7 @@ body {
     border-bottom: 1px solid black;
 }
 
-.creative-developer > h3 {
+#summary > h4 {
     line-height: 2;
 }
 
@@ -43,30 +43,75 @@ body {
     padding-bottom: 2em;;
 }
 
+#address {
+    padding: 0;
+}
+
+#address li {
+    list-style-type: none;
+}
+
+.address-text li {
+    display: inline-block;
+    line-height: 2;
+}
+
+.address-text li:nth-child(1) { 
+    text-transform: uppercase;
+    width: 30%;
+}
+
 #skills {
-    background-color: rgb(197,239,255);
+    /* background-color: rgb(197,239,255); */
     padding: 1em 0;;
 }
 
 .card-header .btn-link {
-    color: black;
+    color: rgb(255,255,255);
+    text-transform: uppercase;
 }
 
 .card-header {
-    background-color: #C0C0C0;
+    background-color: rgb(52,58,64);
 }
 
 .card-body {
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: #fbf7ed;
     border: 1px solid rgba(0,0,0,.125);
+}
+
+#accordionSpecificSkills {
+    border-top: none;
+    border-bottom: none;
 }
 
 #accordionSpecificSkills .card-body {
     background-color: rgba(8,103,11, 0.2);
 }
 
-.accordion {
-    border-bottom: 1px solid rgba(0,0,0,.125);
+#collapseOne ul {
+    margin-bottom: 0;
+}
+
+#collapseOne li {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#collapseOne li:nth-child(1) {
+    text-align: left;
+    width: 70%;
+}
+
+#collapseOne > .card-body {
+    padding-bottom: 1.2em;padding-top: 1.2em;
+}
+
+.progress {
+    height: 25px;
 }
 
 #employment > img,
@@ -94,5 +139,12 @@ body {
 }
 
 #contact {
+    background-image: url("images/keyboard-connect.jpg");
     padding: 1em 0;
+}
+
+#contactInformation > div,
+#contactForm > form {
+    padding: 1em;
+    background-color: #fbf7ed;
 }
