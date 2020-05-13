@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!--Custom CSS-->
@@ -88,7 +90,6 @@
               <h3 class="mb-0">
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-skills-IT"
                   aria-expanded="true" aria-controls="collapse-skills-IT">
-                  <span class="fas fa-chevron-down faDownOne"></span>
                   IT Skills
                 </button>
               </h3>
@@ -102,7 +103,6 @@
                       <h4 class="mb-0">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
                           aria-expanded="false" aria-controls="collapseOne">
-                          <span class="fas fa-chevron-down faDownTwo"></span>
                           Primary Skills
                         </button>
                       </h4>
@@ -222,7 +222,6 @@
                       <h4 class="mb-0">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
                           aria-expanded="false" aria-controls="collapseTwo">
-                          <span class="fas fa-chevron-down faDownTwo"></span>
                           Databases
                         </button>
                       </h4>
@@ -242,7 +241,6 @@
                       <h4 class="mb-0">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"
                           aria-expanded="false" aria-controls="collapseThree">
-                          <span class="fas fa-chevron-down faDownTwo"></span>
                           Version control systems
                         </button>
                       </h4>
@@ -262,7 +260,6 @@
                       <h4 class="mb-0">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
                           aria-expanded="false" aria-controls="collapseFour">
-                          <span class="fas fa-chevron-down faDownTwo"></span>
                           Certification
                         </button>
                       </h4>
@@ -281,7 +278,6 @@
                       <h4 class="mb-0">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"
                           aria-expanded="false" aria-controls="collapseFive">
-                          <span class="fas fa-chevron-down faDownTwo"></span>
                           QA experience
                         </button>
                       </h4>
@@ -305,7 +301,6 @@
                       <h4 class="mb-0">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix"
                           aria-expanded="false" aria-controls="collapseSix">
-                          <span class="fas fa-chevron-down faDownTwo"></span>
                           Generic knowledge in IT industry
                         </button>
                       </h4>
@@ -332,7 +327,6 @@
                 <button class="btn btn-link" type="button" data-toggle="collapse"
                   data-target="#collapse-skills-transferable" aria-expanded="false"
                   aria-controls="collapse-skills-transferable">
-                  <span class="fas fa-chevron-down faDownOne"></span>
                   Transferable Skills
                 </button>
               </h3>
@@ -559,18 +553,7 @@
   <!-- Custom JavaScript -->
   <script>
     $(document).ready(function () {
-      // Downward/upward icon of the outer accordion
-      $('.collapseOuter').on('shown.bs.collapse', function () {
-        $(this).parent().find('.faDownOne').removeClass('faDownOne fa-chevron-down').addClass('faDownOne fa-chevron-up');
-      }).on('hidden.bs.collapse', function () {
-        $(this).parent().find('.faDownOne').removeClass('faDownOne fa-chevron-up').addClass('faDownOne fa-chevron-down');
-      });
-      // Downward/upward icon of the inner accordion
-      $('.collapseInner').on('.collapseInner shown.bs.collapse', function () {
-        $(this).parent().find('.faDownTwo').removeClass('faDownTwo fa-chevron-down').addClass('faDownTwo fa-chevron-up');
-      }).on('hidden.bs.collapse', function () {
-        $(this).parent().find('.faDownTwo').removeClass('faDownTwo fa-chevron-up').addClass('faDownTwo fa-chevron-down');
-      });
+      
     });
   </script>
 </body>

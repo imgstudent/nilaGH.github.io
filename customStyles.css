@@ -61,6 +61,20 @@ body {
     width: 30%;
 }
 
+.mb-0 > a {
+  display: block;
+  position: relative;
+}
+.mb-0 > button:before {
+  content: "\f078"; /* fa-chevron-down */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 0;
+}
+.mb-0 > button[aria-expanded="true"]:before {
+  content: "\f077"; /* fa-chevron-up */
+}
+
 #skills {
     /* background-color: rgb(197,239,255); */
     padding: 1em 0;;
