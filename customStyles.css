@@ -75,6 +75,10 @@ body {
   content: "\f077"; /* fa-chevron-up */
 }
 
+#collapseOne ul > li {
+    font-weight: bold;
+}
+
 #skills {
     /* background-color: rgb(197,239,255); */
     padding: 1em 0;;
@@ -101,7 +105,8 @@ body {
     border-bottom: none;
 }
 
-#accordionSpecificSkills .card-body {
+#accordionSpecificSkills .card-body,
+#collapse-skills-transferable .card-body {
     background-color: rgba(8,103,11, 0.2);
 }
 
@@ -145,6 +150,11 @@ body {
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;
+}
+
+#employment h4,
+#education h4 {
+    text-transform: uppercase;
 }
 
 #education > div {
