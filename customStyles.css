@@ -133,10 +133,10 @@ body {
     height: 25px;
 }
 
-#employment > img,
+/* #employment > img,
 #education > img {
     padding: 0;
-}
+} */
 
 #employment > div {
     padding: 0;
