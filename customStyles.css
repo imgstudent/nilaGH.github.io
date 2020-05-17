@@ -1,18 +1,3 @@
-/*:root {
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-*,
-::before,
-::after {
-    box-sizing: inherit;
-}
-
-body * + * {
-    margin-top: 1.5em;
-}*/
-
 body {
     margin: 0;
 }
@@ -25,7 +10,7 @@ body {
     padding: 0;
 }
 
-.navigation {
+#navigation {
     margin: 1.5em 0;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -80,7 +65,6 @@ body {
 }
 
 #skills {
-    /* background-color: rgb(197,239,255); */
     padding: 1em 0;;
 }
 
@@ -133,11 +117,6 @@ body {
     height: 25px;
 }
 
-/* #employment > img,
-#education > img {
-    padding: 0;
-} */
-
 #employment > div {
     padding: 0;
 }
@@ -171,4 +150,35 @@ body {
 #contactForm > form {
     padding: 1em;
     background-color: #fbf7ed;
+}
+
+.btn-group {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    nav.nav {
+        display: none;
+    }
+
+    .btn-group {
+        display: block;
+    }
+
+    .btn-group a {
+        background-color: #fbf7ed;
+        color: #007bff;
+    }
+
+    .btn-group a + a {
+        border-top: 1px solid rgba(0,0,0,.15);
+    }
+
+    #inteoduction img {
+        padding: 0 3em 2em;
+    }
+
+    #collapseOne .special {
+        margin-bottom: 2em;
+    }
 }
