@@ -8,11 +8,25 @@ $(document).ready(function() {
         $(this).removeClass('fa-hamburger').addClass('fa-bars');
     });
 
-    // Animation of "I am a creative web developer"
-    // $('#summary').load(function() {
-    //     $('#summary span:last-child').fadeOut("slow", function() {
-    //         $(this).prev().fadeOut("slow", arguments.callee);
-    //     });
-    // });
-
+    // Slide of contact modules with mouse scroll
+    (function($) {
+        $.fn.visible = function(partial) {
+            let $t            = $(this),
+                $w            = $(window),
+                viewTop       = $w.scrollTop(),
+                viewBottom    = viewTop + $w.height(),
+                _top          = $t.offset().top,
+                _bottom       = _top + $t.height(),
+                compareTop    = partial === true ? _bottom : _top,
+                compareBottom = partial === true ? _top : _bottom;      
+            return ((compareBottom <= viewBottom) && (compareTop >= viewTop)); 
+        };
+    })(jQuery);
+    $(window).scroll(function(event) { 
+        $(".moduleSlide").each(function(index, element) {
+            if ($(element).visible(true)) {
+                $(element).addClass("come-in"); 
+            } 
+        });
+    });
 });

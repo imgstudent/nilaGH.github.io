@@ -24,7 +24,7 @@ body {
     line-height: 2;
 }
 
-#inteoduction {
+#introduction {
     padding-bottom: 2em;;
 }
 
@@ -89,9 +89,8 @@ body {
     border-bottom: none;
 }
 
-#accordionSpecificSkills .card-body,
-#collapse-skills-transferable .card-body {
-    background-color: rgba(8,103,11, 0.2);
+.card-body {
+    background-color: rgba(225,255,185, 0.5);
 }
 
 #collapseOne ul {
@@ -137,7 +136,7 @@ body {
 }
 
 #education > div {
-    background-color: rgba(8,103,11, 0.2);
+    background-color: rgba(225,255,185, 0.5);
     padding-top: 1em;
 }
 
@@ -146,14 +145,41 @@ body {
     padding: 1em 0;
 }
 
-#contactInformation > div,
-#contactForm > form {
+.moduleSlide > div {
     padding: 1em;
     background-color: #fbf7ed;
 }
 
 .btn-group {
     display: none;
+}
+
+/* Animation of "I am a creative web developer" */
+.signatureAnimation {
+    color: black;
+    font-size: 1.5rem;
+    animation: signatureAnimation 4s;
+}
+
+@keyframes signatureAnimation {
+    0% { color: black; font-size: 1.5rem; }
+    50% { color: pink; font-size: 2rem; }
+    100% { color: black; font-size: 1.5rem; }
+}
+
+/* Animation of the contact slides */
+.come-in {
+    transform: translateX(150px);
+    animation: come-in 1.2s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+    transform: translateX(-150px);
+    animation: come-in 1.2s ease forwards;
+}
+
+@keyframes come-in {
+    to { transform: translateY(0); }
 }
 
 @media only screen and (max-width: 600px) {
@@ -174,7 +200,7 @@ body {
         border-top: 1px solid rgba(0,0,0,.15);
     }
 
-    #inteoduction img {
+    #introduction img {
         padding: 0 3em 2em;
     }
 
