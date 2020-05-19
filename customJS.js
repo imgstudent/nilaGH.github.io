@@ -1,14 +1,14 @@
 "use strict";
 
 $(document).ready(function() {
-    // Mouseover event on the hamburger in small screen
+    // Mouseover event on the navigation hamburger in small screen
     $('.fa-bars').mouseover(function() {
         $(this).removeClass('fa-bars').addClass('fa-hamburger');
     }).mouseout(function() {
         $(this).removeClass('fa-hamburger').addClass('fa-bars');
     });
 
-    // Slide of contact modules with mouse scroll
+    // Animation of contact slides with mouse scroll
     (function($) {
         $.fn.visible = function(partial) {
             let $t            = $(this),
@@ -30,3 +30,31 @@ $(document).ready(function() {
         });
     });
 });
+
+// Event listener
+window.addEventListener('load', () => {
+    loadScript();
+});
+
+// Google map
+function loadScript() {
+    let script = document.createElement('script');
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCfNEuBu4tnk3NXX8G5YlyOIGCmj7lr5Wo&callback=init';
+    document.body.appendChild(script);
+}
+function init() {
+    navigator.geolocation.getCurrentPosition(function (position) {
+        let myLoc = { 
+            lat: position.coords.latitude, 
+            lng: position.coords.longitude 
+        };
+        let mapOptions = {
+            center: new google.maps.LatLng(myLoc.lat, myLoc.lng),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scaleControl: true,
+            zoom: 16
+        };
+        let venueMap = new google.maps.Map(document.getElementById("map"), mapOptions);
+        let marker = new google.maps.Marker({ position: myLoc, map: venueMap });
+    });
+}
