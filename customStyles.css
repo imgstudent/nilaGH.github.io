@@ -6,6 +6,10 @@ body {
     background-color: #fbf7ed;
 }
 
+a {
+    color: #244AB3;
+}
+
 .home-image {
     padding: 0;
 }
@@ -150,6 +154,12 @@ body {
     padding: 1em 0;
 }
 
+#contact h4 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .moduleSlide > div {
     padding: 1em;
     background-color: #fbf7ed;
@@ -167,9 +177,11 @@ body {
 }
 
 @keyframes signatureAnimation {
-    0% { color: black; font-size: 1.5rem; }
-    50% { color: pink; font-size: 2rem; }
-    100% { color: black; font-size: 1.5rem; }
+    0% { color: black; }
+    20% { color: #7A6E4E; }
+    40% { color: black; }
+    60% { color: #7A6E4E; }
+    100% { color: black; }
 }
 
 /* Animation of the contact slides */
