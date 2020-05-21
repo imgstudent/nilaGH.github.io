@@ -165,7 +165,7 @@ a {
     background-color: #fbf7ed;
 }
 
-.btn-group {
+#navigation .btn-group {
     display: none;
 }
 
@@ -199,27 +199,31 @@ a {
     to { transform: translateY(0); }
 }
 
-/* Google map */
-#map {
-    width: 100%;
-    height: 28.4em;
-}
+/* #navigation::after {
+    clear: both;
+    content: "";
+    display: table;
+} */
 
 @media only screen and (max-width: 600px) {
-    nav.nav {
+    #navigation nav {
         display: none;
     }
 
-    .btn-group {
+    #navigation .btn-group {
         display: block;
     }
 
-    .btn-group a {
-        background-color: #fbf7ed;
-        color: #007bff;
+    #navigation .btn-group  a {
+        margin-right: 20em;
     }
 
-    .btn-group a + a {
+    #navigation .btn-group a {
+        background-color: #FFA767;
+        color: #244AB3;
+    }
+
+    #navigation .btn-group a + a {
         border-top: 1px solid rgba(0,0,0,.15);
     }
 
