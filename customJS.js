@@ -29,5 +29,17 @@ $(document).ready(function() {
             } 
         });
     });
+
+    // Scroll event for scrolling up and down
+    let lastScrollTop = 0;
+    $(window).scroll(function(event) {
+        let currentScrollPosition = $(this).scrollTop();
+        if(currentScrollPosition > lastScrollTop) {
+            $('#scrollEvent').text('You scrolled down');
+        } else {
+            $('#scrollEvent').text('You scrolled up');
+        }
+        lastScrollTop = currentScrollPosition;
+    });
 });
 

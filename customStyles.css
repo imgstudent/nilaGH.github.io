@@ -20,6 +20,16 @@ a {
     border-bottom: 1px solid black;
 }
 
+#navigation nav > a:hover {
+    font-weight: bold;
+    background-color: #FFA767;
+}
+
+#navigation .btn-group a:hover {
+    font-weight: bold;
+    background-color: #fbf7ed;
+}
+
 #summary > h4 {
     line-height: 2;
 }
@@ -54,12 +64,14 @@ a {
   display: block;
   position: relative;
 }
+
 .mb-0 > button:before {
   content: "\f078"; /* fa-chevron-down */
   font-family: 'FontAwesome';
   position: absolute;
   right: 0;
 }
+
 .mb-0 > button[aria-expanded="true"]:before {
   content: "\f077"; /* fa-chevron-up */
 }
@@ -204,6 +216,15 @@ a {
     content: "";
     display: table;
 } */
+
+#scrollEvent {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    color: #DB47FC;
+    font-weight: bold;
+}
 
 @media only screen and (max-width: 600px) {
     #navigation nav {
