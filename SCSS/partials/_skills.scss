@@ -1,0 +1,68 @@
+#skills {
+    padding: 1em 0;
+
+    #accordionSpecificSkills {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .card-header {
+        background-color: $cardHeaderBackgroundColor;
+
+        .btn-link {
+            color: $cardButtonColor;
+            text-transform: uppercase;
+        }
+
+        button:before {
+            content: "\f078"; /* fa-chevron-down */
+            font-family: 'FontAwesome';
+            position: absolute;
+            right: 0;
+        }
+          
+        button[aria-expanded="true"]:before {
+            content: "\f077"; /* fa-chevron-up */
+        }
+    }
+    
+    .card-body {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: $primaryColor;
+        border: 1px solid $cardBorderColor;
+        background-color: $lightGreen;
+    }
+
+    #collapseOne {
+        .card-body {
+            padding-top: 1.2em;
+        }
+
+        .progress {
+            height: 25px;
+        }
+
+        ul {
+            margin-bottom: 0;
+        }
+
+        li {
+            font-weight: bold;
+            list-style-type: none;
+            display: inline-block;
+            vertical-align: middle;
+
+            &:nth-child(1) {
+                text-align: left;
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #collapseOne > .card-body {
+        padding-bottom: 1.2em;
+    }
+}

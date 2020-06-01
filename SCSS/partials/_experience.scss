@@ -1,0 +1,16 @@
+#employment {
+    > div {
+        padding: 0;
+        background-color: $lightPink;
+    }
+
+    .carousel-item {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 1em;
+    }
+
+    a {
+        color: $linkColorHover;
+    }
+}

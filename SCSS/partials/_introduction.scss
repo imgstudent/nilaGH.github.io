@@ -1,0 +1,47 @@
+#introduction {
+    padding-bottom: 2em;
+
+    #summary {
+        /* Animation of "I am a creative web developer" */
+        .signatureAnimation {
+            color: black;
+            font-size: 1.5rem;
+            animation: signatureAnimation 4s;
+        }
+
+        @keyframes signatureAnimation {
+            0% { color: black; }
+            20% { color: #7A6E4E; }
+            40% { color: black; }
+            60% { color: #7A6E4E; }
+            100% { color: black; }
+        }
+        
+        > h4 {
+            line-height: 2;
+        }
+
+        #address {
+            padding: 0;
+
+            li {
+                list-style-type: none;
+            }
+
+            .addressText li {
+                display: inline-block;
+                line-height: 2;
+            }
+            
+            .addressText li:nth-child(1) { 
+                text-transform: uppercase;
+                width: 30%;
+            }
+        }
+        
+    }
+    
+    .aboutMe > p {
+        line-height: 2;
+    }
+}

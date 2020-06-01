@@ -1,0 +1,224 @@
+@charset "UTF-8";
+.container {
+  background-color: #FBF7ED;
+}
+
+a {
+  color: #244AB3;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+.homeImage {
+  padding: 0;
+}
+
+#navigation {
+  margin: 1.5em 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#navigation nav > a:hover {
+  font-weight: bold;
+  background-color: #FFA767;
+}
+#navigation .btn-group {
+  display: none;
+}
+#navigation .btn-group a:hover {
+  font-weight: bold;
+  background-color: #FBF7ED;
+}
+
+#scrollEvent {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  color: #DB47FC;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  #navigation nav {
+    display: none;
+  }
+  #navigation .btn-group {
+    display: block;
+  }
+  #navigation .btn-group a {
+    margin-right: 20em;
+    background-color: #FFA767;
+    color: #244AB3;
+  }
+  #navigation .btn-group a + a {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  #introduction img {
+    padding: 0 3em 2em;
+  }
+}
+#introduction {
+  padding-bottom: 2em;
+}
+#introduction #summary {
+  /* Animation of "I am a creative web developer" */
+}
+#introduction #summary .signatureAnimation {
+  color: black;
+  font-size: 1.5rem;
+  animation: signatureAnimation 4s;
+}
+@keyframes signatureAnimation {
+  0% {
+    color: black;
+  }
+  20% {
+    color: #7A6E4E;
+  }
+  40% {
+    color: black;
+  }
+  60% {
+    color: #7A6E4E;
+  }
+  100% {
+    color: black;
+  }
+}
+#introduction #summary > h4 {
+  line-height: 2;
+}
+#introduction #summary #address {
+  padding: 0;
+}
+#introduction #summary #address li {
+  list-style-type: none;
+}
+#introduction #summary #address .addressText li {
+  display: inline-block;
+  line-height: 2;
+}
+#introduction #summary #address .addressText li:nth-child(1) {
+  text-transform: uppercase;
+  width: 30%;
+}
+#introduction .aboutMe > p {
+  line-height: 2;
+}
+
+#skills {
+  padding: 1em 0;
+}
+#skills #accordionSpecificSkills {
+  border-top: none;
+  border-bottom: none;
+}
+#skills .card-header {
+  background-color: #343a40;
+}
+#skills .card-header .btn-link {
+  color: white;
+  text-transform: uppercase;
+}
+#skills .card-header button:before {
+  content: "";
+  /* fa-chevron-down */
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 0;
+}
+#skills .card-header button[aria-expanded=true]:before {
+  content: "";
+  /* fa-chevron-up */
+}
+#skills .card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #FBF7ED;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(225, 255, 185, 0.5);
+}
+#skills #collapseOne .card-body {
+  padding-top: 1.2em;
+}
+#skills #collapseOne .progress {
+  height: 25px;
+}
+#skills #collapseOne ul {
+  margin-bottom: 0;
+}
+#skills #collapseOne li {
+  font-weight: bold;
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+#skills #collapseOne li:nth-child(1) {
+  text-align: left;
+  width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  #collapseOne > .card-body {
+    padding-bottom: 1.2em;
+  }
+}
+#employment > div {
+  padding: 0;
+  background-color: rgba(252, 109, 153, 0.3);
+}
+#employment .carousel-item {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+#employment a {
+  color: #FFA767;
+}
+
+#education div {
+  background-color: rgba(225, 255, 185, 0.5);
+  padding-top: 1em;
+}
+#education a {
+  color: #FFA767;
+}
+
+#contact {
+  background-image: url("images/keyboard-connect.jpg");
+  padding: 1em 0;
+}
+#contact h4 {
+  color: white;
+  font-weight: bold;
+}
+#contact .moduleSlide > div {
+  padding: 1em;
+  background-color: #FBF7ED;
+}
+
+/* Animation of the contact slides */
+.come-in {
+  transform: translateX(150px);
+  animation: come-in 1.2s ease forwards;
+}
+.come-in:nth-child(odd) {
+  transform: translateX(-150px);
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #contact .moduleSlide:last-child {
+    margin-top: 1em;
+  }
+}
+
+/*# sourceMappingURL=customStyles.css.map */

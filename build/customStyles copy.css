@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
 }
 
@@ -63,17 +63,19 @@ a {
 .mb-0 > a {
   display: block;
   position: relative;
-}
+} */
 
-.mb-0 > button:before {
-  content: "\f078"; /* fa-chevron-down */
+/* fa-chevron-down */
+/* .mb-0 > button:before {
+  content: "\f078";
   font-family: 'FontAwesome';
   position: absolute;
   right: 0;
-}
+} */
 
-.mb-0 > button[aria-expanded="true"]:before {
-  content: "\f077"; /* fa-chevron-up */
+/* fa-chevron-up */
+/* .mb-0 > button[aria-expanded="true"]:before {
+  content: "\f077";
 }
 
 #collapseOne ul > li {
@@ -159,7 +161,7 @@ a {
 #education > div {
     background-color: rgba(225,255,185, 0.5);
     padding-top: 1em;
-}
+} 
 
 #contact {
     background-image: url("images/keyboard-connect.jpg");
@@ -179,10 +181,10 @@ a {
 
 #navigation .btn-group {
     display: none;
-}
+} */
 
 /* Animation of "I am a creative web developer" */
-.signatureAnimation {
+/* .signatureAnimation {
     color: black;
     font-size: 1.5rem;
     animation: signatureAnimation 4s;
@@ -194,10 +196,10 @@ a {
     40% { color: black; }
     60% { color: #7A6E4E; }
     100% { color: black; }
-}
+} */
 
 /* Animation of the contact slides */
-.come-in {
+/* .come-in {
     transform: translateX(150px);
     animation: come-in 1.2s ease forwards;
 }
@@ -209,13 +211,13 @@ a {
 
 @keyframes come-in {
     to { transform: translateY(0); }
-}
+} */
 
 /* #navigation::after {
     clear: both;
     content: "";
     display: table;
-} */
+}
 
 #scrollEvent {
     position: fixed;
@@ -259,4 +261,4 @@ a {
     #contact .moduleSlide:last-child {
         margin-top: 1em;
     }
-}
+} */

@@ -1,0 +1,70 @@
+.container {
+    background-color: $primaryColor;
+}
+
+a {
+    color: $linkColor;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+.homeImage {
+    padding: 0;
+}
+
+#navigation {
+    margin: 1.5em 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    nav > a:hover {
+        font-weight: bold;
+        background-color: $linkColorHover;
+    }
+
+    .btn-group {
+        display: none;
+
+        a:hover {
+            font-weight: bold;
+            background-color: $primaryColor;
+        }
+    }
+}
+
+#scrollEvent {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    color: $scrollColor;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    #navigation {
+        nav {
+            display: none;
+        }
+
+        .btn-group {
+            display: block;
+
+            a {
+                margin-right: 20em;
+                background-color: $linkColorHover;
+                color: $linkColor;
+            }
+
+            a + a {
+                border-top: 1px solid rgba(0,0,0,.15);
+            }
+        }
+    }
+
+    #introduction img {
+        padding: 0 3em 2em;
+    }
+}

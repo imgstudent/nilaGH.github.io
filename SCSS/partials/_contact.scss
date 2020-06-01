@@ -1,0 +1,34 @@
+#contact {
+    background-image: url("images/keyboard-connect.jpg");
+    padding: 1em 0;
+
+    h4 {
+        color: white;
+        font-weight: bold;
+    }
+
+    .moduleSlide > div {
+        padding: 1em;
+        background-color: $primaryColor;
+    }
+}
+
+/* Animation of the contact slides */
+.come-in {
+    transform: translateX(150px);
+    animation: come-in 1.2s ease forwards;
+
+    &:nth-child(odd) {
+        transform: translateX(-150px);
+    }
+}
+
+@keyframes come-in {
+    to { transform: translateY(0); }
+}
+
+@media only screen and (max-width: 600px) {
+    #contact .moduleSlide:last-child {
+        margin-top: 1em;
+    }
+}
