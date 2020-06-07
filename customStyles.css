@@ -70,9 +70,9 @@ h4 {
 #introduction #summary .signatureAnimation {
   color: black;
   font-size: 1.5rem;
-  animation: signatureAnimation 4s;
+  animation: inline-uumtf9g 4s;
 }
-@keyframes signatureAnimation {
+@keyframes inline-uumtf9g {
   0% {
     color: black;
   }
@@ -119,6 +119,7 @@ h4 {
 }
 #skills .card-header {
   background-color: #343a40;
+  /* fa-chevron-down: "\f078", fa-chevron-up: "\f077" */
 }
 #skills .card-header .btn-link {
   color: white;
@@ -126,14 +127,15 @@ h4 {
 }
 #skills .card-header button:before {
   content: "";
-  /* fa-chevron-down */
   font-family: "FontAwesome";
   position: absolute;
   right: 0;
 }
 #skills .card-header button[aria-expanded=true]:before {
   content: "";
-  /* fa-chevron-up */
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 0;
 }
 #skills .card-body {
   padding-top: 0;
@@ -204,13 +206,13 @@ h4 {
 /* Animation of the contact slides */
 .come-in {
   transform: translateX(150px);
-  animation: come-in 1.2s ease forwards;
+  animation: inline-uumtf9p 1.2s ease forwards;
 }
 .come-in:nth-child(odd) {
   transform: translateX(-150px);
 }
 
-@keyframes come-in {
+@keyframes inline-uumtf9p {
   to {
     transform: translateY(0);
   }

@@ -3,18 +3,20 @@
 
     #summary {
         /* Animation of "I am a creative web developer" */
+        $name: inline-#{unique-id()};
+        
         .signatureAnimation {
-            color: black;
+            color: $animationColor1;
             font-size: 1.5rem;
-            animation: signatureAnimation 4s;
+            animation: $name 4s;
         }
 
-        @keyframes signatureAnimation {
-            0% { color: black; }
-            20% { color: #7A6E4E; }
-            40% { color: black; }
-            60% { color: #7A6E4E; }
-            100% { color: black; }
+        @keyframes #{$name} {
+            0% { color: $animationColor1; }
+            20% { color: $animationColor2; }
+            40% { color: $animationColor1; }
+            60% { color: $animationColor2; }
+            100% { color: $animationColor1; }
         }
         
         > h4 {

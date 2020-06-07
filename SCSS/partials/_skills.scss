@@ -13,16 +13,16 @@
             color: $cardButtonColor;
             text-transform: uppercase;
         }
-
-        button:before {
-            content: "\f078"; /* fa-chevron-down */
-            font-family: 'FontAwesome';
-            position: absolute;
-            right: 0;
-        }
-          
-        button[aria-expanded="true"]:before {
-            content: "\f077"; /* fa-chevron-up */
+        
+        /* fa-chevron-down: "\f078", fa-chevron-up: "\f077" */
+        $icons: ("button": "\f078", "button[aria-expanded="true"]": "\f077");
+        @each $name, $glyph in $icons {
+            #{$name}:before {
+                content: $glyph;
+                font-family: 'FontAwesome';
+                position: absolute;
+                right: 0;
+            }
         }
     }
     

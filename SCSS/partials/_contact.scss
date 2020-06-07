@@ -14,16 +14,18 @@
 }
 
 /* Animation of the contact slides */
+$name: inline-#{unique-id()};
+
 .come-in {
     transform: translateX(150px);
-    animation: come-in 1.2s ease forwards;
+    animation: $name 1.2s ease forwards;
 
     &:nth-child(odd) {
         transform: translateX(-150px);
     }
 }
 
-@keyframes come-in {
+@keyframes #{$name} {
     to { transform: translateY(0); }
 }
 
